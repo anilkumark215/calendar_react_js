@@ -1,0 +1,96 @@
+.calendar {
+  width: 520px;
+  margin: 20px auto;
+  border: 1.5px solid #ccc;
+  border-radius: 10px;
+  overflow: hidden;
+  padding-bottom: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  font-family: 'Roboto', sans-serif;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #850cef;
+  color: white;
+  padding: 15px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.header button {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.day-names,
+.days {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.day-name,
+.day,
+.empty-day {
+  width: calc(100% / 7);
+  height: 90px;
+  padding: 6px;
+  border: 1px solid #f0f0f0;
+  box-sizing: border-box;
+  text-align: left;
+  font-size: 12px;
+  border-radius: 5px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  overflow: hidden;
+}
+
+.day-name {
+  background-color: #f0f0f0;
+  font-weight: bold;
+  opacity: 0.6;
+  text-align: center;
+  justify-content: center;
+}
+
+.day {
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.day:hover {
+  background-color: #e0e0e0;
+}
+
+.empty-day {
+  background-color: #f9f9f9;
+}
+
+.today {
+  background-color: #7409e7;
+  color: white;
+}
+
+.selected {
+  background-color: #b670f4;
+  color: white;
+}
+
+.event {
+  margin-top: 3px;
+  padding: 2px 4px;
+  font-size: 10px;
+  border-radius: 4px;
+  color: white;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  cursor: pointer;
+}
