@@ -7,7 +7,7 @@ A clean and interactive calendar web app using React. It displays the current mo
 
 ## Live Demo & Repo
 - **Repository:** [anilkumark215/calendar_react_js](https://github.com/anilkumark215/calendar_react_js)
-- **Live Demo:** 
+- **Live Demo:** https://calendarreactjs.netlify.app/
 
 ---
 
